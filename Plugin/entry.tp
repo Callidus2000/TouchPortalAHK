@@ -1,0 +1,48 @@
+{
+	"sdk": 1,
+	"version": 1,
+	"name": "TP AutoHotkey",
+	"id": "tpahk_0001",
+	"configuration": {
+		"colorDark": "#225834",
+		"colorLight": "#45b168"
+	},
+	"categories": [
+		{
+			"id": "TPAHK",
+			"name": "TP AutoHotkey",
+			"actions": [
+				{
+					"id": "ExecuteAHKScript",
+					"prefix": "Plugin",
+					"name": "Exec AHK",
+					"description": "With this action you can execute an AHK Script",
+					"type": "execute",
+					"tryInline": true,
+					"format": "Type the application you want to focus, like: notepad {$scriptPath$} {$scriptParam$}",
+					"execution_cmd": "\"C:\\Program Files\\AutoHotkey\\AutoHotkey.exe\" \"{$scriptPath$}\" {$scriptParam$}",
+					"data": [
+						{
+							"id": "scriptPath",
+							"type": "file",
+							"label": "Script Path"
+						},
+						{
+							"id": "scriptParam",
+							"type": "text",
+							"label": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"settings": [
+		{
+			"name": "Path to AutoHotkey.exe",
+			"type": "text",
+			"default": "C:\\Program Files\\AutoHotkey\\AutoHotkey.exe",
+			"readOnly": false
+		}
+	]
+}

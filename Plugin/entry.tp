@@ -19,7 +19,7 @@
 					"description": "With this action you can execute an AHK Script",
 					"type": "execute",
 					"tryInline": true,
-					"format": "Type the application you want to focus, like: notepad {$scriptPath$} {$scriptParam$}",
+					"format": "Type the AutoHotKey Script path: {$scriptPath$} to execute with the following params: {$scriptParam$}",
 					"execution_cmd": "\"C:\\Program Files\\AutoHotkey\\AutoHotkey.exe\" \"{$scriptPath$}\" {$scriptParam$}",
 					"data": [
 						{
